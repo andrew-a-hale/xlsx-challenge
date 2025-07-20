@@ -20,5 +20,3 @@ uv run generate.py [--source payroll_data.ndjson] [--out data]
 ```
 
 Generates XLSX files with randomized payroll data and compresses them to `data.zip`.
-```
-```
