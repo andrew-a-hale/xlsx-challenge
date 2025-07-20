@@ -1,15 +1,4 @@
-# XLSX Challenge: Payroll Data Generation and Processing
-
-## Overview
-
-This project provides a set of Python scripts for generating and converting payroll data across multiple units and formats.
-
-## Features
-
-- Generate synthetic payroll data with randomized attributes
-- Convert XLSX files to Parquet format
-- Support for multiple organizational units (Brisbane, Sydney, Melbourne)
-- Flexible data generation with randomized departments, employee types, and positions
+# XLSX Challenge: Payroll Data Processing
 
 ## Requirements
 
@@ -20,36 +9,26 @@ This project provides a set of Python scripts for generating and converting payr
   - typer
   - uv
 
+## Project Structure
+
+- `generator/`: Contains scripts for generating payroll data
+  - `generate.py`: Data generation script
+  - `payroll_data.ndjson`: Source seed data for generation
+- `solutions/`: Contains solution implementations for processing the generated data
+  - Each solution is in its own subdirectory
+
 ## Usage
 
 ### Data Generation
 
 ```bash
-uv run generate.py [--source payroll_data.ndjson] [--out xlsx]
+uv run generate.py [--source payroll_data.ndjson] [--out data]
 ```
 
-Generates XLSX files with randomized payroll data in the specified output directory.
+Generates XLSX files with randomized payroll data in the `data/` directory.
 
-### XLSX to Parquet Conversion
+### Solutions
 
-```bash
-uv run convert.py [--input-directory xlsx] [--verbose]
-```
-
-Converts XLSX files to a combined Parquet file.
-
-### XLSX Processing
-
-```bash
-duckdb -c "$(cat process.sql)"
-```
-
-Converts XLSX files to a combined Parquet file.
-
-## Project Structure
-
-- `main.py`: Data generation script
-- `convert.py`: XLSX to Parquet conversion script
-- `payroll_data.ndjson`: Source data for generation
-- `final.parquet`: Combined output after conversion
-
+Solutions for processing the generated payroll data are located in the
+`solutions/` directory. Refer to individual solution README files for specific
+usage instructions.
