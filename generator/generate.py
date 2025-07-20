@@ -6,6 +6,7 @@ import enum
 import json
 import os
 import random
+import shutil
 import tempfile
 import zipfile
 from typing import Optional
@@ -272,6 +273,8 @@ def create_zip(out: str):
                 file_path = os.path.join(root, file)
                 arcname = os.path.relpath(file_path, start=os.path.dirname(out))
                 zipf.write(file_path, arcname=arcname)
+
+    shutil.rmtree(out)
 
 
 def main(
