@@ -28,6 +28,11 @@ uv run generate.py [--source payroll_data.ndjson] [--out data]
 
 Generates XLSX files with randomized payroll data and compresses them to `data.zip`.
 
+### Problem
+
+The goal is to read the XLSX files from `data.zip` into a consistent format
+for data analysis.
+
 ### Solutions
 
 Solutions for processing the generated payroll data are located in the

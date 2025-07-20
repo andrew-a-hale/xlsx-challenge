@@ -2,12 +2,12 @@
 
 ## Requirements
 
-- DuckDB cli
 - Python 3.12+
-- uv
-- duckdb (python library)
-- openpyxl
-- typer
+- Dependencies:
+  - duckdb
+  - openpyxl
+  - typer
+  - uv
 
 ## Usage
 
@@ -18,7 +18,7 @@
 uv run convert.py
 
 # Run SQL processing
-duckdb -c "$(cat process.sql)"
+uv run process.py
 ```
 
 ## Files
