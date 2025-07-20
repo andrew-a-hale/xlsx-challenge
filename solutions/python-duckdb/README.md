@@ -2,8 +2,12 @@
 
 ## Requirements
 
+- DuckDB cli
 - Python 3.12+
-- DuckDB
+- uv
+- duckdb (python library)
+- openpyxl
+- typer
 
 ## Usage
 
