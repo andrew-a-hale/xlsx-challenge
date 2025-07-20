@@ -19,7 +19,6 @@ duckdb -c "$(cat process.sql)"
 
 ## Files
 
-- `data/`: Source XLSX files
 - `convert.py`: Converts XLSX files to Parquet format
 - `process.sql`: SQL queries for data processing
 - `final.parquet`: Processed payroll data in Parquet format
