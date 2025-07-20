@@ -26,3 +26,4 @@ uv run process.py
 - `convert.py`: Converts XLSX files to Parquet format
 - `process.sql`: SQL queries for data processing
 - `final.parquet`: Processed payroll data in Parquet format
+- `process.py`: Executes the `process.sql` file
