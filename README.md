@@ -26,8 +26,7 @@
 uv run generate.py [--source payroll_data.ndjson] [--out data]
 ```
 
-Generates XLSX files with randomized payroll data in the `data/` directory and
-`data.zip` in the top-level directory.
+Generates XLSX files with randomized payroll data and compresses them to `data.zip`.
 
 ### Solutions
 

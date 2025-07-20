@@ -11,7 +11,7 @@
 
 ```bash
 # Convert XLSX to Parquet
-python convert.py
+uv run convert.py
 
 # Run SQL processing
 duckdb -c "$(cat process.sql)"
