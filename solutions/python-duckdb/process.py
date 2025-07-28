@@ -10,4 +10,4 @@ import duckdb
 
 conn = duckdb.connect(":memory:")
 sql = open("process.sql").read()
-print(conn.execute(sql).fetchall())
+print(len(conn.execute(sql).fetchall()))
